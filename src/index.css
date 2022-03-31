@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fdfdfd;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 10px 20px;
+}
+
+#Destaque{
+  color: #2980b9
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form button{
+  width: 200px;
+  margin: 16px 0;
+  padding: 12px 0; 
+  background-color: rgb(41, 128, 185);
+  color: #fdfdfd;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+form button:hover{
+  background-color: rgba(41, 128, 185, .8);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: .2s;
 }
