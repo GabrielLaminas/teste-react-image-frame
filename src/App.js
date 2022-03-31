@@ -58,7 +58,11 @@ const App = () => {
       </h1>
 
       <form>
-        <InputFile label="Foto" nome="foto" onChange={handleChange} />
+        <InputFile 
+          label="Foto" 
+          nome="foto" 
+          onChange={handleChange} 
+        />
 
         <InputFile
           label="Frame"
@@ -67,7 +71,14 @@ const App = () => {
           onChange={handleChange}
         />
 
-        <button onClick={handleClick} disabled={foto && frame ? false : true}>
+        <button 
+          onClick={handleClick} 
+          disabled={foto && frame ? false : true}
+          style={
+            (foto && frame) 
+            ? {opacity: 1, pointerEvents: 'visible'} 
+            : {opacity: 0.5, pointerEvents: 'none'}}
+        >
           Gerar image
         </button>
       </form>
