@@ -1,0 +1,18 @@
+label{
+  max-width: 400px;
+  margin: 8px 0;
+  display: block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  color: black;
+  font-weight: 600;
+}
+
+input{
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1rem;
+  color: #333333;
+}
